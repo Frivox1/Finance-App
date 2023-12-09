@@ -9,7 +9,7 @@ To get started, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/VOTRE_UTILISATEUR/VOTRE_PROJET.git
+    git clone https://github.com/Frivox1/Finance-App.git
     ```
 
 2. Install the required dependencies:
