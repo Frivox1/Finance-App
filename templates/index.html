@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Stock Chart</h1>
         <form method="post">
-            <label for="symbol">Sélectionnez un symbole :</label>
+            <label for="symbol">Select a symbol:</label>
             <select id="symbol" name="symbol" required>
                 <option value="AAPL">Apple Inc. (AAPL)</option>
                 <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
@@ -101,14 +101,14 @@
                 <option value="XOM">Exxon Mobil Corporation (XOM)</option>
             </select>
 
-            <label for="days">Nombre de jours :</label>
+            <label for="days">Number of days:</label>
             <input type="number" id="days" name="days" min="1" value="30" required>
 
-            <button type="submit">Rechercher</button>
+            <button type="submit">Search</button>
         </form>
 
         {% if plot_url %}
-            <h2>Cours de clôture pour {{ symbol }} sur {{ days }} jours</h2>
+            <h2>Closing prices for {{ symbol }} over {{ days }} days</h2>
             <img src="data:image/png;base64,{{ plot_url }}" alt="Stock Chart" id="stock-chart">
         {% elif error_message %}
             <p class="error">{{ error_message }}</p>
